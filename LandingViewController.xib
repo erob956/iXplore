@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController" customModule="Homework_Day_8_Second_Try" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="0fV-Kt-wti" id="HUq-3w-cRl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to my shit" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asv-Tm-0hH">
+                    <rect key="frame" x="226" y="136" width="148" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fV-Kt-wti">
+                    <rect key="frame" x="281" y="214" width="38" height="30"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="a3S-Me-nzt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-eB-a5H">
+                    <rect key="frame" x="272" y="284" width="57" height="30"/>
+                    <state key="normal" title="Register"/>
+                    <connections>
+                        <action selector="registerButtonTapped:" destination="-1" eventType="touchUpInside" id="GmC-Lj-5pL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0fV-Kt-wti" firstAttribute="top" secondItem="asv-Tm-0hH" secondAttribute="bottom" constant="48" id="2gt-jJ-9sR"/>
+                <constraint firstItem="asv-Tm-0hH" firstAttribute="centerX" secondItem="0fV-Kt-wti" secondAttribute="centerX" id="34I-zK-GRp"/>
+                <constraint firstItem="HdJ-eB-a5H" firstAttribute="top" secondItem="0fV-Kt-wti" secondAttribute="bottom" constant="40" id="gMM-cM-abm"/>
+                <constraint firstItem="0fV-Kt-wti" firstAttribute="centerX" secondItem="HdJ-eB-a5H" secondAttribute="centerX" id="hfV-Sx-nrc"/>
+                <constraint firstItem="asv-Tm-0hH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="136" id="j2H-dK-cCX"/>
+                <constraint firstItem="asv-Tm-0hH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yhI-Yg-vDj"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
